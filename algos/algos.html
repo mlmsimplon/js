@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>algo</title>
+</head>
+<body>
+    
+<section id="textarea">
+
+    <form>
+        <p>
+          Nom : <input type="text" name="nom"  /> <br />
+          Mot de Passe  : <input type="password" name="password" onblur="verif(this)" size="8" /> <br />
+          <input type="submit" value="Valider" />
+        </p>
+      </form>
+
+    <script>
+
+
+
+function wrong(champ, erreur) {
+   if (erreur === true)
+   champ.style.backgroundColor = "red";
+    
+    else 
+    {
+        champ.style.backgroundColor = "";
+       
+    }
+   
+}
+
+function verif(champ) {
+
+    if(champ.value.length < 8)
+
+{
+  alert("Votre mot de passe doit comporter 8 caractères au minimum");
+  return false;
+}
+
+}
+
+
+
+
+
+
+
+
+
+{
+    console.log();
+}
+   
+// exemple de return 
+   function timesFive(num) {
+       return num * 5;
+   }     
+      let answer = timesFive(5)  ;
+       {
+           console.log(answer);
+       }
+    //autre exemple return//
+    
+    let processed = 0;
+    function processArg(num) {
+        return (num + 3) / 2 ;
+    }
+    processed = processArg(7);
+
+{
+    console.log(processed);
+ }
+
+
+        </script>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Functions</title>
+</head>
+<body>
+    <style>
+    .pink {
+        color: pink;
+        width: 500px;
+        height: 10px;
+        border: 1px, solid darkblue;
+        border-radius: 15px;
+    }
+    
+    </style>
+
+<section id="text">
+
+
+
+</section>
+
+
+    <script>
+    
+    let m = document.getElementById("text");
+
+    function miseEnPage(titre, para, boo) {
+
+let monTitre = document.createElement("h1")
+monTitre.innerHTML = titre
+
+
+if (boo === true){
+    monTitre.classList.add("pink")
+}
+
+
+let monPara = document.createElement("p")
+monPara.innerHTML = para
+
+
+
+ m.appendChild(monTitre)
+ m.appendChild(monPara) 
+
+ }  
+    
+    miseEnPage("Premier Titre" , "Voici un premier paragraphe")
+    miseEnPage(" Deuxième titre en rose" , "Voici un deuxième paragraphe", true)
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

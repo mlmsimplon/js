@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<html>
+<body>
+<!--exo 3 CSS-->  
+<style>
+        .maClasse {
+            color: red;
+            font-size: 18pt;
+            border: 1px solid blue;
+            background-color: beige;
+        }
+        #transi {
+          
+            width: 800px;
+            height: 500px;
+            border-radius:15px;
+            margin: 3px;
+        }
+        #transi img {
+           
+            width: 800px;
+            height: 500px;
+            margin: 3px;
+            transition: opacity 1s ease-in-out;
+        }
+
+
+
+    </style>
+<h1>Hello</h1>
+
+
+
+    <div id="a"> Jean Albert et Jean Louis </div>
+ 
+<div id="transi">
+        <button onclick="monImage()">Changer image</button>
+    <img class="bottom" src="..//DOM/ex4.jpg" alt="fail" id="uneImage"/>
+    <img class="top" src="ordi.jpg" alt="yo" id="autreImage"/>
+</div>
+
+
+
+
+
+
+  
+    <script>  
+
+
+//ex 3//
+let maDivv = document.getElementById("a")
+   
+function Yo(){
+    let maDivv = document.getElementById("a");}
+{
+    console.log(maDivv);
+}
+
+document.getElementById("a").className =  ("maClasse")
+
+
+
+let zzz = document.getElementById("uneImage");
+zzz.onclick=function(){
+    zzz.setAttribute("src" , "ordi.jpg");
+    zzz.style.transform= "translate(100px , 0px)";
+    zzz.style.border= ("20px solid pink");
+    zzz.style.transition = "2s";
+    zzz.style.opacity = 0.5;
+}
+//ex 4 autre//
+// function monImage(){
+//     let x = document.getElementById("uneImage")
+//     x.src = "../ordi.jpg"
+//     let y = document.getElementById("autreImage")
+//     y.src = "../ex4.jpg"
+// console.log(x)
+
+//let monImage = new Image();
+
+// monImage.onload = function() {
+//    document.getElementById("uneImage").src = monImage.src; 
+// }
+
+//monImage.src = "https://cdn.pixabay.com/photo/2019/10/29/15/57/vancouver-4587302_960_720.jpg" ;
+
+
+
+
+/*
+function changerImage(premierei, deuxiemei)
+{
+    let image = {
+      premierei = premierei,
+      deuxiemei = deuxiemei,
+    }
+
+//image.onclick = function()
+
+ChangerImage()
+*/
+ 
+
+
+//ex5 //
+let m = document.querySelector("h1");
+
+
+
+m.onclick = function(){
+	m.style.transform= "translate(0px , 5px)";
+    m.style.border= ("5px solid violet");
+    m.style.color = "pink";
+    m.style.transition = "2s";
+}
+
+function change(event, target){
+let evento=event
+target=target
+}
+
+{
+m.addEventListener ("mouseenter", function(e){
+    change(e)
+    e.target.style.color = "red";
+})
+
+}
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+</body>
+</html>
