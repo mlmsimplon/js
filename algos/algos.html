@@ -8,98 +8,134 @@
 </head>
 <body>
     
-<section id="textarea">
+    <section id="textarea">
+        
+        <form>
+            <p>
+                Nom : <input type="text" name="nom"  /> <br />
+                Mot de Passe  : <input type="password" name="password" onblur="verif(this)" size="8" /> <br />
+                <input type="submit" value="Valider" />
+        </p>
+    </form>
+    
 
     <form>
-        <p>
-          Nom : <input type="text" name="nom"  /> <br />
-          Mot de Passe  : <input type="password" name="password" onblur="verif(this)" size="8" /> <br />
-          <input type="submit" value="Valider" />
-        </p>
-      </form>
 
-    <script>
+    <p>
+        <div>zfdozakfeafe</div>
+        <input type="text" placeholder="votre nom">
+        <input type="text" placeholder="votre mot de passe">
+        <button type="submit" id="buttonLog">ESe connecter</button>
+    </p>
+
+    </form>
+</section>
+
+<script>
+
+ let bu = document.getElementById("buttonLog")
+
+ bu.addEventListener("click", function(e){
+     e.preventDefault()
+     console.log("lol")
+ })
 
 
 
-function wrong(champ, erreur) {
-   if (erreur === true)
-   champ.style.backgroundColor = "red";
-    
-    else 
-    {
+
+
+    function wrong(champ, erreur) {
+            if (erreur === true){
+        champ.style.backgroundColor = "red";
+        }   else {
         champ.style.backgroundColor = "";
-       
+     }
+
     }
+
+    function verif(champ) {
+            if(champ.value.length < 8)
+
+    {
+    alert("Votre mot de passe doit comporter 8 caractères au minimum");
+    return false;
+    }
+
+    }
+
+//exercice 11
+let age = 18 ;
+
+if (age >= 18 && age <= 19) {
+    console.log("Junior");
+    
+} else if(age >= 20 && age <= 22 ){
+console.log("Espoir");
+
+} else if (age >= 23 && age <= 39) {
+    console.log("Senior");
+    
+} else if ( age >= 40) {
+console.log("Vétéran");
+
+} else {
+    console.log("Seulement plus de 18 ans!");
+    
+}
+    
+// exercice 12
+//let i = 1;
+
+for (let i = 1; i <= 10; i++) {
+   console.log(i);
+    
+}
+
+//exercice 13
+let y = 1;
+
+for (let y= 0; y <= 10; y+=2) {
+    console.log(y);
+    
+    
+}
+    
+//ex 14 
+let z = [2, 4, 6];
+
+for (let o = 0; o <= z.length; o++) {
+    console.log(z)
+}
    
-}
-
-function verif(champ) {
-
-    if(champ.value.length < 8)
-
-{
-  alert("Votre mot de passe doit comporter 8 caractères au minimum");
-  return false;
-}
-
-}
+    
 
 
 
-
-
-
-
-
-
-{
-    console.log();
-}
    
+
+
 // exemple de return 
    function timesFive(num) {
        return num * 5;
-   }     
+    }     
       let answer = timesFive(5)  ;
        {
            console.log(answer);
        }
+
     //autre exemple return//
-    
     let processed = 0;
+
     function processArg(num) {
         return (num + 3) / 2 ;
     }
     processed = processArg(7);
 
-{
+    {
     console.log(processed);
- }
+    }
 
 
-        </script>
-
-
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</script>
 </body>
 </html>

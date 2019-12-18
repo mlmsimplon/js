@@ -29,80 +29,61 @@
     
     let m = document.getElementById("text");
 
-    function miseEnPage(titre, para, boo) {
+    // function miseEnPage(titre, para, boo) {
 
-let monTitre = document.createElement("h1")
-monTitre.innerHTML = titre
+    //     let monTitre = document.createElement("h1")
+    //     monTitre.innerHTML = titre
 
-
-if (boo === true){
-    monTitre.classList.add("pink")
-}
+    //     let monPara = document.createElement("p")
+    //     monPara.innerHTML = para
 
 
-let monPara = document.createElement("p")
-monPara.innerHTML = para
+    //     if (boo === true){
+    //         monTitre.classList.add("pink")
+    //     }   
+
+    //     m.appendChild(monTitre)
+    //     m.appendChild(monPara) 
+
+    // }  
+
+    function chapitre(chap){
+       
+        let monParagraphe = document.createElement('p');
+        monParagraphe.innerText = chap.texte
+
+        m.appendChild(monParagraphe); 
+    }
+
+    let bienvenue = {
+        texte: "Bienvenue",
+        
+    };
+
+
+    chapitre(bienvenue);
 
 
 
- m.appendChild(monTitre)
- m.appendChild(monPara) 
 
- }  
+
+    let titre1 = "Bienvenue !";
+    let par1 = "YOOOOOOOOOO";
+    miseEnPage(titre1 , par1);
+
+
+
+
     
-    miseEnPage("Premier Titre" , "Voici un premier paragraphe")
-    miseEnPage(" Deuxième titre en rose" , "Voici un deuxième paragraphe", true)
+    miseEnPage("Premier Chapitre" , "Voici un premier paragraphe");
+    miseEnPage("Deuxième Chapitre en rose" , "Voici un deuxième paragraphe", true);
+    miseEnPage("Troisième Chapitre" , "Voici un troisième paragraphe");
+    miseEnPage("Quatrième Chapitre en rose" , "Voici un quatrième paragraphe" , true);
+  
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
     
     </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 </body>
