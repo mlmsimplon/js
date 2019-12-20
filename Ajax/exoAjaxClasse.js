@@ -27,7 +27,7 @@ class Article {
     etoile() {
         for (let i =0; i< this.classement ; i++) {
             let stars = document.createElement('img')
-            stars.src='et.png';
+            stars.src='images/et.png';
             stars.style.width = "15px";
             stars.style.height = "15px"
             this.para.appendChild(stars)
